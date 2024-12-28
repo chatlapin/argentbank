@@ -1,50 +1,126 @@
-# Project #10 - Argent Bank API
+![ArgentBank](./Front/src/assets/argentBankLogo.png)
 
-This codebase contains the code needed to run the backend for Argent Bank.
 
-## Getting Started
+![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/ArthurBlanc)
+[![React](https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react&logocolor=61dafb)](https://reactjs.org/)
+[![Redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)](https://redux.js.org/)
 
-### Prerequisites
+# Objectifs:
 
-Argent Bank uses the following tech stack:
 
-- [Node.js v12](https://nodejs.org/en/)
+#### Écrire des appels à l'API REST pour connecter le front au back et modéliser une API.
+
+## Phase 1: Créer un système d'authentification
+
+## Phase 2: Modéliser l'API pour la gestion des transactions
+
+
+#### Compétences évaluées :
+
+ -   Implémenter un gestionnaire d'état dans une application React avec Redux et Redux Toolkit et RTK Query
+ -   S'authentifier à une API
+ -   Interagir avec une API
+ -   Modéliser une API
+
+### Situation du projet :
+
+Vous êtes Développeur Front-end dans une agence spécialisée dans le développement d’applications web. Votre mission est de mettre en place l'application de votre nouveau client: ARGENT BANK.
+Le projet se décompose en deux phases :
+
+-   Phase 1 : Authentification des utilisateurs - Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.
+-   Phase 2 : Transactions - Spécifier les endpoints d’API nécessaires pour la gestion des transactions par client, par compte, par date...
+
+
+### Phase 1 :
+#### Contraintes techniques :
+
+-   Créer l’application web (responsive) avec React, le HTML statique et le CSS est fourni pour la page d'accueil, la page de connexion et la page de profil.
+
+-   Utiliser Redux pour gérer le state de l'application.
+
+#### Contraintes fonctionnelles :
+
+-   L'utilisateur peut visiter la page d'accueil
+-   L'utilisateur peut se connecter au système
+    -   Accéder à la page de connexion (/login)
+    -   Remplir le formulaire de connexion avec ses identifiants
+    -   Demander à l'application de mémoriser identifiant et mot de passe
+    -   Se connecter à l’application en utilisant des jetons JWT pour l'authentification
+    -   Naviguer avec succès vers la page de profil (/profile)
+-   L'utilisateur ne peut pas voir les informations relatives à son profil s'il n'est pas connecté
+    -   Accéder à la page de profil (/profile)
+    -   Afficher le prénom sur la page de profil
+    -   Afficher les informations de compte bancaire
+-   L'utilisateur peut modifier le profil (nom et prénom) et conserver les données dans la base de données.
+-   L'utilisateur peut se déconnecter du système
+    -   Le bouton de déconnexion s'affiche une fois connecté
+    -   Cliquer sur le bouton de déconnexion déconnecte l’utilisateur et celui-ci est redirigé vers la page d'accueil
+
+### Phase 2 :
+#### Contraintes techniques :
+- Utilisation du format YAML et de Swagger pour visualiser les futurs endpoints de l'API pour gérer toute la partie transaction de l'application
+
+
+### Branche Main:
+
+utilisation de Redux et de Redux Toolkit (createAsyncThunk et createSlice)
+
+### Branche createApi:
+
+dans l'optique d'une mise en production de la phase 2, et donc de l'augmentation des appels à l'API, j'ai travaillé sur cette branche avec RTK Query et createApi, afin de centraliser les queries et mutations dans un seul et même fichier, et de diminuer la quantité d'informations que l'on stocke dans le state pour préférer une gestion en cache.
+
+
+## Installation :
+
+### Prérequis :
+
+-   [Git](https://git-scm.com)
+-   [Node.js v12](https://nodejs.org/en/)
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 
-Please make sure you have the right versions and download both packages. You can verify this by using the following commands in your terminal:
+### Dépendances :
 
-```bash
-# Check Node.js version
-node --version
+-   [React](https://reactjs.org): ^18.2.0
+-   [React-router-dom](https://reactrouter.com/): 6.10.0
+-   [React-redux](https://react-redux.js.org/): 8.1.3
+-   [Redux](https://redux.js.org/): 4.2.1
+-   [@reduxjs/toolkit](https://redux-toolkit.js.org/): 1.9.7
 
-# Check Mongo version
-mongo --version
-```
 
-### Instructions
+### Procédure d'installation :
 
-1. Fork this repo
-1. Clone the repo onto your computer
-1. Open a terminal window in the cloned project
-1. Run the following commands:
+Cloner le repository:
 
-```bash
-# Install dependencies
-npm install
+- git clone https://github.com/daddyjanno/Argent-Bank
 
-# Start local dev server
-npm run dev:server
+### Installation et lancement du Back-end :
 
-# Populate database with two users
-npm run populate-db
-```
+1. Aller dans le dossier "Back"
 
-Your server should now be running at http://localhost:3001 and you will now have two users in your MongoDB database!
+2. Vérifier la version de Node:
 
-## Populated Database Data
+-   `node --version`
 
-Once you run the `populate-db` script, you should have two users in your database:
+3. Vérifier la version de MongoDB
+-   `mongo --version`
+4. Installer toutes les dépendances pour le back-end:
 
+-   `npm install` ou `yarn`
+
+
+5. Lancer le back-end (port 3001 par défaut) avec Node 12:
+-   `nvm use 12`
+
+-   `npm run dev:server`
+
+6. Créer deux utilisateurs dans la DB:
+-   `npm run populate-db`
+
+
+## Utilisateurs en base de données:
 ### Tony Stark
 
 - First Name: `Tony`
@@ -61,12 +137,31 @@ Once you run the `populate-db` script, you should have two users in your databas
 
 ## API Documentation
 
-To learn more about how the API works, once you have started your local environment, you can visit: http://localhost:3001/api-docs
+Pour en apprendre plus sur le fonctionnement de l'API, une fois l'environnement local lancé, visitez: http://localhost:3001/api-docs
 
-## Design Assets
+### Installation et lancement du front-end :
 
-Static HTML and CSS has been created for most of the site and is located in: `/designs`.
+1. Aller dans le dossier "Front"
 
-For some of the dynamic features, like toggling user editing, there is a mock-up for it in `/designs/wireframes/edit-user-name.png`.
+2. Installer toutes les dépendances pour le front-end:
 
-And for the API model that you will be proposing for transactitons, the wireframe can be found in `/designs/wireframes/transactions.png`.
+-   `npm install`
+
+3. Lancer le front-end:
+
+-   `npm start`
+
+Le front-end sera lancé à l'URL:
+`http://localhost:3000/`
+
+
+
+
+## Développé avec :
+
+-   [Visual Studio Code](https://code.visualstudio.com/)
+-   [React 18](https://fr.reactjs.org/)
+-   [Create React App](https://create-react-app.dev/)
+-   [React Router V6](https://reactrouter.com/)
+-   [Redux](https://redux.js.org/) - Bibliothèque JS de gestion d'état pour applications web
+-   [GitHub](https://github.com/) - Outil de gestion de versions
