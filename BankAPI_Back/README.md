@@ -19,17 +19,6 @@ node --version
 
 # Check Mongo version
 mongo --version
-
-mongosh --version
-
-brew services start mongodb-community
-http://localhost:27017/
-It looks like you are trying to access MongoDB over HTTP on the native driver port.
-
-zsh: command not found: mongo
-brew install mongodb-community-shell
-
-exit: ctrl c
 ```
 
 ### Instructions
