@@ -8,28 +8,21 @@ mongo --version
 4. Installer toutes les dépendances pour le back-end:
 npm install ou yarn
 
-# 5. mongo
+5. mongo
 show dbs
 show collections
 use argentBankDB
 db.users.find()
 Example: JSON
-[
-  { 
-    "_id": ObjectId("64f9c3d26b72b5479a98695c"), 
     "firstName": "Tony", 
     "lastName": "Stark", 
     "email": "tony@stark.com", 
     "password": "password123" 
-  },
-  { 
-    "_id": ObjectId("64f9c3d26b72b5479a98695d"), 
+
     "firstName": "Steve", 
     "lastName": "Rogers", 
     "email": "steve@rogers.com", 
     "password": "password456" 
-  }
-]
 
 7. Lancer le back-end (port 3001 par défaut) avec Node 12:
 nvm use 12
