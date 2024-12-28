@@ -1,4 +1,4 @@
-Installation et lancement du Back-end :
+# Installation et lancement du Back-end :
 
 1. Aller dans le dossier "Back"
 2. Vérifier la version de Node:
@@ -8,7 +8,7 @@ mongo --version
 4. Installer toutes les dépendances pour le back-end:
 npm install ou yarn
 
-5. mongo
+# 5. mongo
 show dbs
 show collections
 use argentBankDB
@@ -53,18 +53,18 @@ npm run dev:server
 7. Créer deux utilisateurs dans la DB:
 npm run populate-db
 
-1. Verify MongoDB Server is Running
+# Verify MongoDB Server is Running
 
 Check MongoDB Service Status:
 brew services list 
 brew services start mongodb-community
 brew services restart mongodb-community
 
-1. Identify the Conflicting Process:
+# Identify the Conflicting Process:
 lsof -i tcp:3001
 kill 12345
 
-Installation et lancement du front-end :
+# Installation et lancement du front-end :
 1. Aller dans le dossier "Front"
 2. Installer toutes les dépendances pour le front-end:
 npm install
