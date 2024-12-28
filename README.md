@@ -48,20 +48,20 @@ npm run populate-db
 
 # Verify MongoDB Server is Running
 
-Check MongoDB Service Status:
-brew services list 
-brew services start mongodb-community
-brew services restart mongodb-community
+1. Check MongoDB Service Status:
+2. brew services list 
+3. brew services start mongodb-community
+4. brew services restart mongodb-community
 
 # Identify the Conflicting Process:
-lsof -i tcp:3001
-kill 12345
+1. lsof -i tcp:3001
+2. kill 12345
 
 # Installation et lancement du front-end :
 1. Aller dans le dossier "Front"
 2. Installer toutes les dépendances pour le front-end:
-npm install
+   npm install
 3. Lancer le front-end:
-npm start
+   npm start
 
 Le front-end sera lancé à l'URL: http://localhost:3000/
