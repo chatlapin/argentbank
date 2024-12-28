@@ -9,11 +9,12 @@ mongo --version
 npm install ou yarn
 
 5. mongo
+show dbs
 
-6. Lancer le back-end (port 3001 par défaut) avec Node 12:
+7. Lancer le back-end (port 3001 par défaut) avec Node 12:
 nvm use 12
 npm run dev:server
-7. Créer deux utilisateurs dans la DB:
+8. Créer deux utilisateurs dans la DB:
 npm run populate-db
 
 # nvm installation
