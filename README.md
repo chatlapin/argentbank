@@ -13,17 +13,7 @@ show dbs
 show collections
 use argentBankDB
 db.users.find()
-
-Yes, after selecting the "users" collection, you can see all the documents within it using the following command:
-
-JavaScript
-
-db.users.find() 
-
-Example:
-
-JSON
-
+Example: JSON
 [
   { 
     "_id": ObjectId("64f9c3d26b72b5479a98695c"), 
