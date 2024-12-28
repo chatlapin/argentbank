@@ -9,10 +9,10 @@ mongo --version
 npm install ou yarn
 
 5. mongo
-show dbs
-show collections
-use argentBankDB
-db.users.find()
+1. show dbs
+2. show collections
+3. use argentBankDB
+4. db.users.find()
 Example: JSON
     "firstName": "Tony", 
     "lastName": "Stark", 
