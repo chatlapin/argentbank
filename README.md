@@ -8,7 +8,7 @@ mongo --version
 4. Installer toutes les dépendances pour le back-end:
 npm install ou yarn
 
-5. mongo
+5. mongo ou mongosh
 1. show dbs
 2. show collections
 3. use argentBankDB
