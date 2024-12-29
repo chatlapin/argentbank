@@ -4,6 +4,7 @@ import { userSlice } from '../features/user/userSlice'
 
 const state = {}
 
+// Issue 6: State management is done through Redux, with a store, actions, and reducers for handling application state changes.
 const store = configureStore({
     preloadedState: state,
     reducer: combineReducers({

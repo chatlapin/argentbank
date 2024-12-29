@@ -12,6 +12,7 @@ function Profile() {
     const token = useSelector(getAuthToken)
 
     useEffect(() => {
+        // Issue 4: Users can only see their own profile with their first name and placeholder bank account information.
         dispatch(fetchUserData(token))
     }, [dispatch, token])
 
@@ -29,6 +30,7 @@ function Profile() {
                     {user.firstName} {user.lastName}
                 </h1>
                 {editToggle ? (
+                    // Issue 5: Users can update their profile (first name and last name), which is persisted to the database.
                     <UserEditForm
                         editToggle={editToggle}
                         setEditToggle={setEditToggle}
@@ -47,4 +49,5 @@ function Profile() {
     )
 }
 
+// Issue 6: State management is done through Redux, with a store, actions, and reducers for handling application state changes.
 export default Profile

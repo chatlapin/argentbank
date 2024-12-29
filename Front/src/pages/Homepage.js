@@ -9,6 +9,7 @@ const Homepage = () => {
             <Hero />
             <section className="features">
                 <h2 className="sr-only">Features</h2>
+                {/* Issue 1: The Home page now displays all placeholder data from the mockup. */}
                 {featuresData.map((feature, index) => {
                     return (
                         <Feature
