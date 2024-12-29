@@ -66,6 +66,9 @@ npm run populate-db
 
 Le front-end sera lancé à l'URL: http://localhost:3000/
 
+npm install redux
+npm install react-redux
+
 #Design
 
 Static HTML and CSS has been created for most of the site and is located in: /designs.
