@@ -1,3 +1,4 @@
+// Issue #1: User can see the home page with all placeholder data from mockup
 import React from 'react';
 
 const Home = () => {

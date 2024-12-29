@@ -1,15 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Logo from '../assets/argentBankLogo.png';
-import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../store/authSlice";
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../store/authSlice';
 
 const Header = () => {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleLogout = () => {
     dispatch(logout());
+    history.push('/');
   };
 
   return (
@@ -17,7 +18,7 @@ const Header = () => {
       <Link className="main-nav-logo" to="/">
         <img
           className="main-nav-logo-image"
-          src={Logo}
+          src="/img/argentBankLogo.png"
           alt="Argent Bank Logo"
         />
         <h1 className="sr-only">Argent Bank</h1>
@@ -29,13 +30,13 @@ const Header = () => {
               <i className="fa fa-user-circle"></i>
               {user?.firstName}
             </Link>
-            <Link className="main-nav-item" to="/" onClick={handleLogout}>
+            <button className="main-nav-item" onClick={handleLogout}>
               <i className="fa fa-sign-out"></i>
               Sign Out
-            </Link>
+            </button>
           </>
         ) : (
-          <Link className="main-nav-item" to="/sign-in">
+          <Link className="main-nav-item" to="/login">
             <i className="fa fa-user-circle"></i>
             Sign In
           </Link>
@@ -46,3 +47,4 @@ const Header = () => {
 };
 
 export default Header;
+

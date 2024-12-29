@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
+import SignIn from './pages/Signin.jsx';
 import UserProfile from './pages/UserProfile';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -14,7 +14,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/sign-in" component={SignIn} />
+          <Route path="/login" component={SignIn} />
           <PrivateRoute path="/profile" component={UserProfile} />
         </Switch>
         <Footer />
