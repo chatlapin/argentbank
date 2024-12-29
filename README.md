@@ -72,4 +72,9 @@ Static HTML and CSS has been created for most of the site and is located in: /de
 
 For some of the dynamic features, like toggling user editing, there is a mock-up for it in /designs/wireframes/edit-user-name.png.
 
+<img width="961" alt="edit-user-name" src="https://github.com/user-attachments/assets/9d17811f-f137-41b1-bc20-0b4379215440" />
+
+
 And for the API model that you will be proposing for transactitons, the wireframe can be found in /designs/wireframes/transactions.png.
+
+<img width="963" alt="transactions" src="https://github.com/user-attachments/assets/c9b250ab-7a36-4943-9ddc-3a5f287b441b" />
