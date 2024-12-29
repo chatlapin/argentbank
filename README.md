@@ -69,6 +69,8 @@ Le front-end sera lancé à l'URL: http://localhost:3000/
 npm install redux
 npm install react-redux
 
+npm install swagger-ui-react axios
+
 # 6 issues from repo Projet-10-Bank...
 1. The Home page now displays all placeholder data from the mockup.
 2. Users can log in to the system using JWT tokens for authentication.
