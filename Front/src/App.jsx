@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './layout/Header.jsx';
+import Footer from './layout/Footer.jsx';
 import Home from './pages/Home';
 import SignIn from './pages/Signin.jsx';
 import UserProfile from './pages/UserProfile';
-import PrivateRoute from './components/PrivateRoute';
+import PrivateRoute from './layout/PrivateRoute';
 
 const App = () => {
   return (
