@@ -69,6 +69,17 @@ Le front-end sera lancé à l'URL: http://localhost:3000/
 npm install redux
 npm install react-redux
 
+# 6 issues from repo Projet-10-Bank...
+1. The Home page now displays all placeholder data from the mockup.
+2. Users can log in to the system using JWT tokens for authentication.
+3. Users can log out and return to the home page.
+4. Users can only see their own profile with their first name and placeholder bank account information.
+5. Users can update their profile (first name and last name), which is persisted to the database.
+6. State management is done through Redux, with a store, actions, and reducers for handling application state changes.
+
+Make sure to implement the necessary API endpoints on the backend to handle these requests, 
+and update the axios calls in the authSlice to use the correct API URLs for the project.
+
 #Design
 
 Static HTML and CSS has been created for most of the site and is located in: /designs.
