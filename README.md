@@ -65,3 +65,11 @@ npm run populate-db
    npm start
 
 Le front-end sera lancé à l'URL: http://localhost:3000/
+
+#Design
+
+Static HTML and CSS has been created for most of the site and is located in: /designs.
+
+For some of the dynamic features, like toggling user editing, there is a mock-up for it in /designs/wireframes/edit-user-name.png.
+
+And for the API model that you will be proposing for transactitons, the wireframe can be found in /designs/wireframes/transactions.png.
