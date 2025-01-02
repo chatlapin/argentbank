@@ -4,10 +4,12 @@ import argentBankLogo from '@/assets/argentBankLogo.png'
 import { logout } from '@/redux/features/auth/authSlice'
 import { useEffect } from 'react'
 
+
 const Navigation = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const { isAuthenticated } = useSelector(state => state.auth)
+  const { firstName } = useSelector(state => state.profile)
   /* useEffect(() => {
       if (!isAuthenticated) {
          navigate('/')
@@ -37,6 +39,7 @@ const Navigation = () => {
           </Link>
         ) : (
           <Link className="main-nav-item" onClick={handleSignOut}>
+            <i className="fa fa-user-circle"></i> {firstName} <span>  </span>
             <i className="fa fa-sign-out"></i>
             Sign Out
           </Link>

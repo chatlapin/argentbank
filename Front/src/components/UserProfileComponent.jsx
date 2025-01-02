@@ -101,8 +101,8 @@ const UserProfileComponent = () => {
                                 type="text"
                                 id="lastName"
                                 name="lastName"
-                                onChange={handleInputChange}
                                 value={editForm.lastName}
+                                onChange={handleInputChange}
                             />
                         </div>
                         <div className="edit-buttons">
