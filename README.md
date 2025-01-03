@@ -8,7 +8,7 @@ node --version
 Vérifier la version de MongoDB
 mongo --version
 
-2. nstaller toutes les dépendances pour le back-end:
+2. installer toutes les dépendances pour le back-end:
 npm install ou yarn
 
 3. npm run dev
