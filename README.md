@@ -8,7 +8,14 @@ mongo --version
 4. Installer toutes les dépendances pour le back-end:
 npm install ou yarn
 
-5. mongo ou mongosh
+5. Lancer le back-end (port 3001 par défaut) avec Node 12:
+nvm use 12
+npm run dev:server
+
+- Créer deux utilisateurs dans la DB:
+npm run populate-db
+
+- mongo ou mongosh
 1. show dbs
 2. show collections
 3. use argentBankDB
@@ -22,13 +29,14 @@ Example: JSON
     "firstName": "Steve", 
     "lastName": "Rogers", 
     "email": "steve@rogers.com", 
-    "password": "password456" 
+    "password": "password456"
 
-7. Lancer le back-end (port 3001 par défaut) avec Node 12:
-nvm use 12
-npm run dev:server
-8. Créer deux utilisateurs dans la DB:
-npm run populate-db
+# Installation et lancement du front-end :
+1. Aller dans le dossier "Front"
+2. Installer toutes les dépendances pour le front-end:
+   npm install
+3. Lancer le front-end:
+   npm run dev
 
 # nvm installation
 1. curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
@@ -56,13 +64,6 @@ npm run populate-db
 # Identify the Conflicting Process:
 1. lsof -i tcp:3001
 2. kill 12345
-
-# Installation et lancement du front-end :
-1. Aller dans le dossier "Front"
-2. Installer toutes les dépendances pour le front-end:
-   npm install
-3. Lancer le front-end:
-   npm start
 
 Le front-end sera lancé à l'URL: http://localhost:3000/
 
