@@ -1,21 +1,26 @@
 # Installation et lancement du Back-end :
 
-1. Aller dans le dossier "Back"
-2. Vérifier la version de Node:
+1. Aller dans le dossier "cd Back"
+
+Vérifier la version de Node:
 node --version
-3. Vérifier la version de MongoDB
+
+Vérifier la version de MongoDB
 mongo --version
-4. Installer toutes les dépendances pour le back-end:
+
+2. nstaller toutes les dépendances pour le back-end:
 npm install ou yarn
 
-5. Lancer le back-end (port 3001 par défaut) avec Node 12:
+3. npm run dev
+
+Lancer le back-end (port 3001 par défaut) avec Node 12:
 nvm use 12
 npm run dev:server
 
-- Créer deux utilisateurs dans la DB:
+Créer deux utilisateurs dans la DB:
 npm run populate-db
 
-- mongo ou mongosh
+mongo ou mongosh
 1. show dbs
 2. show collections
 3. use argentBankDB
